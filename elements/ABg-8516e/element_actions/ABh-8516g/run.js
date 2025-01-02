@@ -1,102 +1,92 @@
 function(instance, properties, context) {
+    
+    // Define constants and variables
+    const delimiter = properties.delimiter === 'tab' ? '\t' : properties.delimiter;
+    let sourceJSON = properties.source_JSON.trim();
 
+    // Check and remove leading [ or ending ] if they exist
+    if (sourceJSON.startsWith('[')) {
+        sourceJSON = sourceJSON.slice(1);
+    }
+    if (sourceJSON.endsWith(']')) {
+        sourceJSON = sourceJSON.slice(0, -1);
+    }
 
+    const content = JSON.parse(`[${sourceJSON.replace(/(\r\n|\n|\r)/gm, "")}]`);
+    const filename = `${properties.file_name}.csv`;
+    const mimetype = 'text/csv';
 
-    let delimiter = properties.delimiter === 'tab' ? '\t' : properties.delimiter,	
-    	csvData,
-		content = JSON.parse(`[${properties.source_JSON.replace(/(\r\n|\n|\r)/gm,"")}]`),
-    	filename = properties.file_name + ".csv",
-        mimetype = 'text/csv';
+    // Generate CSV data using Papa.unparse
+    const csvData = "\uFEFF" + Papa.unparse(content, {
+        delimiter: delimiter,
+        encoding: 'UTF-8'
+    });
 
-    
-    // USE PAPA TO UNPARSE THE JSON
-    
-    csvData = Papa.unparse(content,{delimiter: delimiter});
+    // Create a Blob from the CSV data
+    const blob = new Blob([csvData], { type: mimetype });
 
-    
-    // CREATE THE BLOB
-    
-    var blob = new Blob([csvData], {type: mimetype});
-    
-    
-    // RETURN FILE TO ELEMENT
-    
-    createFile()
-    
-    
-    // RUN THE SAVE FILE FUNCTION
-    
-    properties.save_file ? openSaveFileDialog(csvData, filename, mimetype) : '';
-    
-    
-    // CREATE THE DOWNLOAD
-    
-    function openSaveFileDialog (data, filename, mimetype) {
+    // Create and upload the file
+    createFile(blob, filename).then((url) => {
+        if (properties.save_file) {
+            openSaveFileDialog(blob, filename);
+        }
+        publishUrl(url);
+    }).catch((err) => {
+        console.error('Error:', err);
+    });
 
-        if (!data) return;
+    // Function to open save file dialog
+    function openSaveFileDialog(blob, filename) {
+        if (!blob) return;
 
-        /* var blob = data.constructor !== Blob
-        ? new Blob([data], {type: mimetype || 'application/octet-stream'})
-        : data ;*/
-              
-          // DOWNLOAD FILE 
-        
+        // Download file
         if (navigator.msSaveBlob) {
             navigator.msSaveBlob(blob, filename);
             return;
         }
 
-        var lnk = document.createElement('a'),
-            url = window.URL,
-            objectURL;
-
-        if (mimetype) {
-            lnk.type = mimetype;
-        }
+        const lnk = document.createElement('a');
+        const url = window.URL;
+        const objectURL = url.createObjectURL(blob);
 
         lnk.download = filename || 'untitled';
-        lnk.href = objectURL = url.createObjectURL(blob);
+        lnk.href = objectURL;
         lnk.dispatchEvent(new MouseEvent('click'));
-        setTimeout(url.revokeObjectURL.bind(url, objectURL));
-
+        setTimeout(() => url.revokeObjectURL(objectURL), 0);
     }
-    
-    // CREATE AN UPLOADABLE URL FOR THE FILE
-    
-    function createFile(){
 
-        var reader = new FileReader();
-        
-        reader.readAsDataURL(blob)
+    // Function to create file and return a URL
+    async function createFile(blob, filename) {
+        const reader = new FileReader();
 
-        reader.onloadend = function () {
+        return new Promise((resolve, reject) => {
+            reader.onloadend = () => {
+                const base64String = reader.result;
+                const base64Substring = base64String.substr(base64String.indexOf(',') + 1);
 
-            var base64String = reader.result;
+                // Upload to the CSV Creator element
+                context.uploadContent(filename, base64Substring, (err, url) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(url);
+                    }
+                });
+            };
 
-            // Remove the additional data at the front of the string
+            reader.onerror = () => {
+                reject(new Error('Failed to read the blob.'));
+            };
 
-            var base64Substring = base64String.substr(base64String.indexOf(',') + 1)
-
-            // Upload to the CSV Creator element
-            context.uploadContent( filename, base64Substring, uploadFile);
-
-        }
-
+            reader.readAsDataURL(blob);
+        });
     }
-        
-    // PUBLISH URL TO ELEMENT
-    
-    function uploadFile(err, url){
 
+    // Function to publish URL to element
+    function publishUrl(url) {
         instance.publishState('created_file', url);
-        instance.triggerEvent('has_created_your_file')
-
-        if (err){
-
-            console.log('error '+ err);
-
-        }
-
+        instance.triggerEvent('has_created_your_file');
     }
+
 
 }

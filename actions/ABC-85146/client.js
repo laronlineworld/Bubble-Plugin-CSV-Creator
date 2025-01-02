@@ -46,7 +46,32 @@ function(properties, context) {
     	properties.h_23 != null ? columns.push(processList(properties.col23, length)) && headers.push(properties.h_23) : columns;
     	properties.h_24 != null ? columns.push(processList(properties.col24, length)) && headers.push(properties.h_24) : columns;
     	properties.h_25 != null ? columns.push(processList(properties.col25, length)) && headers.push(properties.h_25) : columns;
-    
+        properties.h_26 != null ? columns.push(processList(properties.col26, length)) && headers.push(properties.h_26) : columns;
+        properties.h_27 != null ? columns.push(processList(properties.col27, length)) && headers.push(properties.h_27) : columns;
+        properties.h_28 != null ? columns.push(processList(properties.col28, length)) && headers.push(properties.h_28) : columns;
+        properties.h_29 != null ? columns.push(processList(properties.col29, length)) && headers.push(properties.h_29) : columns;
+        properties.h_30 != null ? columns.push(processList(properties.col30, length)) && headers.push(properties.h_30) : columns;
+        properties.h_31 != null ? columns.push(processList(properties.col31, length)) && headers.push(properties.h_31) : columns;
+        properties.h_32 != null ? columns.push(processList(properties.col32, length)) && headers.push(properties.h_32) : columns;
+        properties.h_33 != null ? columns.push(processList(properties.col33, length)) && headers.push(properties.h_33) : columns;
+        properties.h_34 != null ? columns.push(processList(properties.col34, length)) && headers.push(properties.h_34) : columns;
+        properties.h_35 != null ? columns.push(processList(properties.col35, length)) && headers.push(properties.h_35) : columns;
+        properties.h_36 != null ? columns.push(processList(properties.col36, length)) && headers.push(properties.h_36) : columns;
+        properties.h_37 != null ? columns.push(processList(properties.col37, length)) && headers.push(properties.h_37) : columns;
+        properties.h_38 != null ? columns.push(processList(properties.col38, length)) && headers.push(properties.h_38) : columns;
+        properties.h_39 != null ? columns.push(processList(properties.col39, length)) && headers.push(properties.h_39) : columns;
+        properties.h_40 != null ? columns.push(processList(properties.col40, length)) && headers.push(properties.h_40) : columns;
+        properties.h_41 != null ? columns.push(processList(properties.col41, length)) && headers.push(properties.h_41) : columns;
+        properties.h_42 != null ? columns.push(processList(properties.col42, length)) && headers.push(properties.h_42) : columns;
+        properties.h_43 != null ? columns.push(processList(properties.col43, length)) && headers.push(properties.h_43) : columns;
+        properties.h_44 != null ? columns.push(processList(properties.col44, length)) && headers.push(properties.h_44) : columns;
+        properties.h_45 != null ? columns.push(processList(properties.col45, length)) && headers.push(properties.h_45) : columns;
+        properties.h_46 != null ? columns.push(processList(properties.col46, length)) && headers.push(properties.h_46) : columns;
+        properties.h_47 != null ? columns.push(processList(properties.col47, length)) && headers.push(properties.h_47) : columns;
+        properties.h_48 != null ? columns.push(processList(properties.col48, length)) && headers.push(properties.h_48) : columns;
+        properties.h_49 != null ? columns.push(processList(properties.col49, length)) && headers.push(properties.h_49) : columns;
+        properties.h_50 != null ? columns.push(processList(properties.col50, length)) && headers.push(properties.h_50) : columns;
+
 
         // Clean up special characters from the data
     	// Start by looping through the array of columns

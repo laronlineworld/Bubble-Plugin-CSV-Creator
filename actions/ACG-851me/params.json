@@ -1,9 +1,9 @@
 {
     "category": "plugins",
-    "display": "Create CSV from JSON (SSA)",
+    "display": "Create a CSV from JSON (backend)",
     "fields": {
         "ABy": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>JSON CONTENT</span>",
+            "caption": "𝗝𝗦𝗢𝗡 𝗖𝗢𝗡𝗧𝗘𝗡𝗧",
             "editor": "DynamicValue",
             "is_list": false,
             "long_text": true,
@@ -18,45 +18,52 @@
             "rank": 1
         },
         "ACB": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>FILE DELIMITER</span>",
+            "caption": "𝗙𝗜𝗟𝗘 𝗗𝗘𝗟𝗜𝗠𝗜𝗧𝗘𝗥",
             "default_val": ",",
             "doc": "",
             "editor": "DynamicValue",
             "name": "delimiter",
-            "rank": 2,
+            "rank": 3,
             "value": "text"
         },
         "ACD": {
             "caption": "Here you can set the delimiter for your exported file. By default it will use a comma as the delimiter but you can set this to anything you like. ",
             "editor": "Label",
             "name": "here_you_can_set_the_delimiter_for_your_exported_file._by_default_it_will_use_a_comma_as_the_delimiter_but_you_can_set_this_to_anything_you_like.___to_create_a_tab_delimiter,_set_this_value_to_‘tab’_(don’t_include_the_quotes)",
-            "rank": 3
+            "rank": 4
         },
         "ACE": {
             "caption": "To create a tab delimiter, set this value to ‘tab’ (don’t include the quotes)",
             "editor": "Label",
             "name": "to_create_a_tab_delimiter,_set_this_value_to_‘tab’_(don’t_include_the_quotes)",
-            "rank": 4
+            "rank": 5
         },
         "ACF": {
             "caption": "Note, using a space, ↵, \", or an empty delimiter will result in a comma being substituted in the exported file.",
             "editor": "Label",
             "name": "note,_using_a_space,_↵,_\",_or_an_empty_delimiter_will_result_in_a_comma_being_substituted_in_the_exported_file.",
-            "rank": 5
+            "rank": 6
         },
         "ACL": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>SCAN FOR CSV INJECTION</b> [beta]</span>",
+            "caption": "SCAN FOR CSV INJECTION 𝐁𝐄𝐓𝐀",
             "default_val": false,
             "doc": "",
             "editor": "Checkbox",
             "name": "scan_for_csv_injection",
-            "rank": 6
+            "rank": 7
         },
         "ACO": {
             "caption": "With any CSV that contains user generated content, there is the risk of the user entering data that can be run as a function when the CSV is imported into a spreadsheet tool (ie, Excel, Numbers, etc) If this box is checked we will scan for known characters that can be used to trigger spreadsheet functions and prepend them with a single quote to ensure they are read as a text value only. Please note, this is not a guaranteed protection against any possible injection and you should take your own precautions as well if this vulnerability is a concern.",
             "editor": "Label",
             "name": "csv_injection_info",
-            "rank": 7
+            "rank": 8
+        },
+        "ACZ": {
+            "caption": "𝗘𝗡𝗖𝗟𝗢𝗦𝗘 𝗜𝗡 𝗤𝗨𝗢𝗧𝗘𝗦",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "quotes",
+            "rank": 2
         }
     },
     "return_value": {
@@ -65,6 +72,18 @@
             "name": "base64_text",
             "rank": 0,
             "value": "text"
+        },
+        "ACX": {
+            "caption": "Error message",
+            "name": "error_message",
+            "rank": 1,
+            "value": "text"
+        },
+        "ACY": {
+            "caption": "Returned an error",
+            "name": "returned_an_error",
+            "rank": 2,
+            "value": "boolean"
         }
     },
     "type": "server_side",

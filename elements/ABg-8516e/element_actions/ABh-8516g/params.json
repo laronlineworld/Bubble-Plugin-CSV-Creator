@@ -2,7 +2,7 @@
     "caption": "Send JSON to",
     "fields": {
         "ABj": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>FILE NAME</b></span>",
+            "caption": "𝗙𝗜𝗟𝗘 𝗡𝗔𝗠𝗘",
             "default_val": "csv_creator",
             "editor": "DynamicValue",
             "name": "file_name",
@@ -16,7 +16,7 @@
             "rank": 4
         },
         "ABl": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>JSON CONTENT</span>",
+            "caption": "𝗝𝗦𝗢𝗡 𝗖𝗢𝗡𝗧𝗘𝗡𝗧",
             "default_val": "{\"Name\": \"Owen Wilson\", \"Date\": \"01-22-21\" }",
             "editor": "DynamicValue",
             "long_text": true,
@@ -43,7 +43,7 @@
             "rank": 8
         },
         "ABq": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>FILE DELIMITER</span>",
+            "caption": "𝗙𝗜𝗟𝗘 𝗗𝗘𝗟𝗜𝗠𝗜𝗧𝗘𝗥",
             "default_val": ",",
             "editor": "DynamicValue",
             "name": "delimiter",
@@ -51,7 +51,7 @@
             "value": "text"
         },
         "ABs": {
-            "caption": "<span style=\"color: white; margin-bottom: 20px;\"><b>ALLOW USER TO SAVE THE FILE</b></span>",
+            "caption": "𝗔𝗟𝗟𝗢𝗪 𝗨𝗦𝗘𝗥 𝗧𝗢 𝗦𝗔𝗩𝗘 𝗧𝗛𝗘 𝗙𝗜𝗟𝗘",
             "default_val": true,
             "doc": "",
             "editor": "Checkbox",

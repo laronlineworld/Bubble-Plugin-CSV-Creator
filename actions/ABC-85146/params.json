@@ -306,15 +306,16 @@
             "rank": 36,
             "value": "_any_thing"
         },
-        "ACb": {
+        "ACc": {
             "caption": "Header 17",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_17",
             "optional": true,
             "rank": 37,
             "value": "text"
         },
-        "ACc": {
+        "ACd": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -323,15 +324,16 @@
             "rank": 38,
             "value": "_any_thing"
         },
-        "ACd": {
+        "ACe": {
             "caption": "Header 18",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_18",
             "optional": true,
             "rank": 39,
             "value": "text"
         },
-        "ACe": {
+        "ACf": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -340,15 +342,16 @@
             "rank": 40,
             "value": "_any_thing"
         },
-        "ACf": {
+        "ACg": {
             "caption": "Header 19",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_19",
             "optional": true,
             "rank": 41,
             "value": "text"
         },
-        "ACg": {
+        "ACh": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -357,15 +360,16 @@
             "rank": 42,
             "value": "_any_thing"
         },
-        "ACh": {
+        "ACi": {
             "caption": "Header 20",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_20",
             "optional": true,
             "rank": 43,
             "value": "text"
         },
-        "ACi": {
+        "ACj": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -374,15 +378,16 @@
             "rank": 44,
             "value": "_any_thing"
         },
-        "ACj": {
+        "ACk": {
             "caption": "Header 21",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_21",
             "optional": true,
             "rank": 45,
             "value": "text"
         },
-        "ACk": {
+        "ACl": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -391,15 +396,16 @@
             "rank": 46,
             "value": "_any_thing"
         },
-        "ACl": {
+        "ACm": {
             "caption": "Header 22",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_22",
             "optional": true,
             "rank": 47,
             "value": "text"
         },
-        "ACm": {
+        "ACn": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -408,15 +414,16 @@
             "rank": 48,
             "value": "_any_thing"
         },
-        "ACn": {
+        "ACo": {
             "caption": "Header 23",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_23",
             "optional": true,
             "rank": 49,
             "value": "text"
         },
-        "ACo": {
+        "ACp": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -425,15 +432,16 @@
             "rank": 50,
             "value": "_any_thing"
         },
-        "ACp": {
+        "ACq": {
             "caption": "Header 24",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_24",
             "optional": true,
             "rank": 51,
             "value": "text"
         },
-        "ACq": {
+        "ACr": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -442,15 +450,22 @@
             "rank": 52,
             "value": "_any_thing"
         },
-        "ACr": {
+        "ACs": {
             "caption": "Header 25",
             "editor": "DynamicValue",
+            "is_list": false,
             "name": "h_25",
             "optional": true,
             "rank": 53,
             "value": "text"
         },
-        "ACs": {
+        "ACt": {
+            "caption": "The header input will add a header to the top of each column in your CSV. You can use this as a switch for your data as well. If the header field is empty that column will be ignored even if you have data selected in the corresponding data field.",
+            "editor": "Label",
+            "name": "info_4",
+            "rank": 4
+        },
+        "ACu": {
             "caption": "↳ Data",
             "editor": "DynamicValue",
             "is_list": true,
@@ -459,11 +474,400 @@
             "rank": 54,
             "value": "_any_thing"
         },
-        "ACt": {
-            "caption": "The header input will add a header to the top of each column in your CSV. You can use this as a switch for your data as well. If the header field is empty that column will be ignored even if you have data selected in the corresponding data field.",
-            "editor": "Label",
-            "name": "info_4",
-            "rank": 4
+        "ACv": {
+            "caption": "Header 26",
+            "editor": "DynamicValue",
+            "name": "h_26",
+            "optional": true,
+            "rank": 55,
+            "value": "text"
+        },
+        "ACw": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col27",
+            "optional": true,
+            "rank": 56,
+            "value": "_any_thing"
+        },
+        "ACx": {
+            "caption": "Header 28",
+            "editor": "DynamicValue",
+            "name": "h_28",
+            "optional": true,
+            "rank": 57,
+            "value": "text"
+        },
+        "ACy": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col28",
+            "optional": true,
+            "rank": 58,
+            "value": "_any_thing"
+        },
+        "ACz": {
+            "caption": "Header 29",
+            "editor": "DynamicValue",
+            "name": "h_29",
+            "optional": true,
+            "rank": 59,
+            "value": "text"
+        },
+        "ADA": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col29",
+            "optional": true,
+            "rank": 60,
+            "value": "_any_thing"
+        },
+        "ADB": {
+            "caption": "Header 30",
+            "editor": "DynamicValue",
+            "name": "h_30",
+            "optional": true,
+            "rank": 61,
+            "value": "text"
+        },
+        "ADC": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col30",
+            "optional": true,
+            "rank": 62,
+            "value": "_any_thing"
+        },
+        "ADD": {
+            "caption": "Header 31",
+            "editor": "DynamicValue",
+            "name": "h_31",
+            "optional": true,
+            "rank": 63,
+            "value": "text"
+        },
+        "ADE": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col31",
+            "optional": true,
+            "rank": 64,
+            "value": "_any_thing"
+        },
+        "ADF": {
+            "caption": "Header 32",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "h_32",
+            "optional": true,
+            "rank": 65,
+            "value": "text"
+        },
+        "ADG": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col32",
+            "optional": true,
+            "rank": 66,
+            "value": "_any_thing"
+        },
+        "ADH": {
+            "caption": "Header 33",
+            "editor": "DynamicValue",
+            "name": "h_33",
+            "optional": true,
+            "rank": 67,
+            "value": "text"
+        },
+        "ADI": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col33",
+            "optional": true,
+            "rank": 68,
+            "value": "_any_thing"
+        },
+        "ADJ": {
+            "caption": "Header 34",
+            "editor": "DynamicValue",
+            "name": "h_34",
+            "optional": true,
+            "rank": 69,
+            "value": "text"
+        },
+        "ADK": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "long_text": true,
+            "name": "col34",
+            "optional": true,
+            "rank": 70,
+            "value": "_any_thing"
+        },
+        "ADL": {
+            "caption": "Header 35",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "h_35",
+            "optional": true,
+            "rank": 71,
+            "value": "text"
+        },
+        "ADM": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col36",
+            "optional": true,
+            "rank": 72,
+            "value": "_any_thing"
+        },
+        "ADN": {
+            "caption": "Header 37",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "h_37",
+            "optional": true,
+            "rank": 73,
+            "value": "text"
+        },
+        "ADO": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col37",
+            "optional": true,
+            "rank": 74,
+            "value": "_any_thing"
+        },
+        "ADP": {
+            "caption": "Header 38",
+            "editor": "DynamicValue",
+            "name": "h_38",
+            "optional": true,
+            "rank": 75,
+            "value": "text"
+        },
+        "ADQ": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col38",
+            "optional": true,
+            "rank": 76,
+            "value": "_any_thing"
+        },
+        "ADR": {
+            "caption": "Header 39",
+            "editor": "DynamicValue",
+            "name": "h_39",
+            "optional": true,
+            "rank": 77,
+            "value": "text"
+        },
+        "ADS": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col39",
+            "optional": true,
+            "rank": 78,
+            "value": "_any_thing"
+        },
+        "ADT": {
+            "caption": "Header 40",
+            "editor": "DynamicValue",
+            "name": "h_40",
+            "optional": true,
+            "rank": 79,
+            "value": "text"
+        },
+        "ADU": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col40",
+            "optional": true,
+            "rank": 80,
+            "value": "_any_thing"
+        },
+        "ADV": {
+            "caption": "Header 41",
+            "editor": "DynamicValue",
+            "name": "h_41",
+            "optional": true,
+            "rank": 81,
+            "value": "text"
+        },
+        "ADW": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col41",
+            "optional": true,
+            "rank": 82,
+            "value": "_any_thing"
+        },
+        "ADX": {
+            "caption": "Header 42",
+            "editor": "DynamicValue",
+            "name": "h_42",
+            "optional": true,
+            "rank": 83,
+            "value": "text"
+        },
+        "ADY": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col42",
+            "optional": true,
+            "rank": 84,
+            "value": "_any_thing"
+        },
+        "ADZ": {
+            "caption": "Header 43",
+            "editor": "DynamicValue",
+            "name": "h_43",
+            "optional": true,
+            "rank": 85,
+            "value": "text"
+        },
+        "ADa": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col43",
+            "optional": true,
+            "rank": 86,
+            "value": "_any_thing"
+        },
+        "ADb": {
+            "caption": "Header 44",
+            "editor": "DynamicValue",
+            "name": "h_44",
+            "optional": true,
+            "rank": 87,
+            "value": "text"
+        },
+        "ADc": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col44",
+            "optional": true,
+            "rank": 88,
+            "value": "_any_thing"
+        },
+        "ADd": {
+            "caption": "Header 45",
+            "editor": "DynamicValue",
+            "name": "h_45",
+            "optional": true,
+            "rank": 89,
+            "value": "text"
+        },
+        "ADe": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col45",
+            "optional": true,
+            "rank": 90,
+            "value": "_any_thing"
+        },
+        "ADf": {
+            "caption": "Header 46",
+            "editor": "DynamicValue",
+            "name": "h_46",
+            "optional": true,
+            "rank": 91,
+            "value": "text"
+        },
+        "ADg": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col46",
+            "optional": true,
+            "rank": 92,
+            "value": "_any_thing"
+        },
+        "ADh": {
+            "caption": "Header 47",
+            "editor": "DynamicValue",
+            "name": "h_47",
+            "optional": true,
+            "rank": 93,
+            "value": "text"
+        },
+        "ADi": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col47",
+            "optional": true,
+            "rank": 94,
+            "value": "_any_thing"
+        },
+        "ADj": {
+            "caption": "Header 48",
+            "editor": "DynamicValue",
+            "name": "h_48",
+            "optional": true,
+            "rank": 95,
+            "value": "text"
+        },
+        "ADk": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col48",
+            "optional": true,
+            "rank": 96,
+            "value": "_any_thing"
+        },
+        "ADl": {
+            "caption": "Header 49",
+            "editor": "DynamicValue",
+            "name": "h_49",
+            "optional": true,
+            "rank": 97,
+            "value": "text"
+        },
+        "ADm": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col49",
+            "optional": true,
+            "rank": 98,
+            "value": "_any_thing"
+        },
+        "ADn": {
+            "caption": "Header 50",
+            "editor": "DynamicValue",
+            "name": "h_50",
+            "optional": true,
+            "rank": 99,
+            "value": "text"
+        },
+        "ADo": {
+            "caption": "↳ Data",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "col50",
+            "optional": true,
+            "rank": 100,
+            "value": "_any_thing"
         }
     },
     "type": "client_side"
