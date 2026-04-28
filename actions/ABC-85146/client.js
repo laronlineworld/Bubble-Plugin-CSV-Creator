@@ -1,3 +1,4 @@
+
 function(properties, context) {
 
 	console.log('Creating a CSV with the awesome CSV Creator!')
@@ -71,6 +72,21 @@ function(properties, context) {
         properties.h_48 != null ? columns.push(processList(properties.col48, length)) && headers.push(properties.h_48) : columns;
         properties.h_49 != null ? columns.push(processList(properties.col49, length)) && headers.push(properties.h_49) : columns;
         properties.h_50 != null ? columns.push(processList(properties.col50, length)) && headers.push(properties.h_50) : columns;
+    	properties.h_51 != null ? columns.push(processList(properties.col51, length)) && headers.push(properties.h_51) : columns;
+        properties.h_52 != null ? columns.push(processList(properties.col52, length)) && headers.push(properties.h_52) : columns;
+        properties.h_53 != null ? columns.push(processList(properties.col53, length)) && headers.push(properties.h_53) : columns;
+        properties.h_54 != null ? columns.push(processList(properties.col54, length)) && headers.push(properties.h_54) : columns;
+        properties.h_55 != null ? columns.push(processList(properties.col55, length)) && headers.push(properties.h_55) : columns;
+        properties.h_56 != null ? columns.push(processList(properties.col56, length)) && headers.push(properties.h_56) : columns;
+        properties.h_57 != null ? columns.push(processList(properties.col57, length)) && headers.push(properties.h_57) : columns;
+        properties.h_58 != null ? columns.push(processList(properties.col58, length)) && headers.push(properties.h_58) : columns;
+        properties.h_59 != null ? columns.push(processList(properties.col59, length)) && headers.push(properties.h_59) : columns;
+        properties.h_60 != null ? columns.push(processList(properties.col60, length)) && headers.push(properties.h_60) : columns;
+        properties.h_61 != null ? columns.push(processList(properties.col61, length)) && headers.push(properties.h_61) : columns;
+        properties.h_62 != null ? columns.push(processList(properties.col62, length)) && headers.push(properties.h_62) : columns;
+        properties.h_63 != null ? columns.push(processList(properties.col63, length)) && headers.push(properties.h_63) : columns;
+        properties.h_64 != null ? columns.push(processList(properties.col64, length)) && headers.push(properties.h_64) : columns;
+        properties.h_65 != null ? columns.push(processList(properties.col65, length)) && headers.push(properties.h_65) : columns;
 
 
         // Clean up special characters from the data
@@ -158,4 +174,7 @@ function(properties, context) {
     
 
 }
+
+ 
+
 
